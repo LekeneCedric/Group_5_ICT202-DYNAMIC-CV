@@ -1,8 +1,11 @@
 #element{
 &:hover{
-    & {
+    &{
         color:white;
        
+    }
+    & p{
+        color: white;
     }
     & div{
         background-color: rgb(245, 122, 122);
