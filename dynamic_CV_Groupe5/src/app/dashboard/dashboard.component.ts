@@ -11,5 +11,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  defaultStyle:String=" color:white";
+  defaultBackgroundColor:String = "backgroundColor:#4a63e7"
 }
