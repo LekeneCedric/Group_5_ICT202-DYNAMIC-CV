@@ -19,10 +19,32 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MainComponent } from './main/main.component';
+import { AboutMeComponent } from './main/about-me/about-me.component';
+import { HomeComponent } from './main/home/home.component';
+import { MySkillComponent } from './main/my-skill/my-skill.component';
+import { ServiceComponent } from './main/service/service.component';
+import { ExperienceComponent } from './main/experience/experience.component';
+import { EducationComponent } from './main/education/education.component';
+import { LanguageComponent } from './main/language/language.component';
+import { PersonalProjectComponent } from './main/personal-project/personal-project.component';
+import { ContactComponent } from './main/contact/contact.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent,
+    MainComponent,
+    AboutMeComponent,
+    HomeComponent,
+    MySkillComponent,
+    ServiceComponent,
+    ExperienceComponent,
+    EducationComponent,
+    LanguageComponent,
+    PersonalProjectComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
