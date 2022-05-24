@@ -8,9 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ExperienceComponent implements OnInit {
 
   constructor() { }
-
+  experiences :any = JSON.parse(localStorage.getItem("experience")!)
   ngOnInit(): void {
   }
-@Input()
-experiences:any;
+  
+
 }

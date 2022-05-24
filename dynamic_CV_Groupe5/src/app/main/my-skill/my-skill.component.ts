@@ -10,7 +10,7 @@ export class MySkillComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
-@Input()
-competences:any
+  }  
+  competences:any = JSON.parse(localStorage.getItem("competence")!);
+
 }

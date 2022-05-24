@@ -11,6 +11,6 @@ export class PersonalProjectComponent implements OnInit {
 
   ngOnInit(): void {
   }
-@Input()
-personalProject :any ;
+  personalProject : any = JSON.parse(localStorage.getItem("personalProject")!);
+
 }

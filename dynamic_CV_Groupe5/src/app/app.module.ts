@@ -30,6 +30,7 @@ import { EducationComponent } from './main/education/education.component';
 import { PersonalProjectComponent } from './main/personal-project/personal-project.component';
 import { ContactComponent } from './main/contact/contact.component';
 import { HttpClientJsonpModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,19 @@ import { HttpClientJsonpModule } from '@angular/common/http';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot([
+      {path:'',component:AboutMeComponent },
+      {path:'home',component:HomeComponent},
+      {path:'main',component:MainComponent},
+      {path:'about',component:AboutMeComponent},
+      {path:'skill',component:MySkillComponent},
+      {path:'service',component:ServiceComponent},
+      {path:'experience',component:ExperienceComponent},
+      {path:'personalProject',component:PersonalProjectComponent},
+      {path:'contact',component:ContactComponent },
+      {path:'education',component:EducationComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

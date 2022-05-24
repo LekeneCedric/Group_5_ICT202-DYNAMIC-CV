@@ -8,9 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class AboutMeComponent implements OnInit {
 
   constructor() { }
-
+  nom:any= localStorage.getItem("nom")!;
   ngOnInit(): void {
+    
   }
-@Input()
-nom : any;
 }

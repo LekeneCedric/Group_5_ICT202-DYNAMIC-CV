@@ -10,7 +10,7 @@
             <div class="p-1 float-start" id="isPointed"></div>
             <div class="p-2"><i class=" fas fa-archway" [style]="defaultStyle"></i>
                 </div>
-            <div class="p-2"><p [style]="defaultStyle">Home</p></div>
+            <div class="p-2"><a [routerLink]="['/home']" [style]="defaultStyle">Home</a ></div>
           </div>
     </div>
     <div class="row" id="aboutMe">
@@ -18,7 +18,7 @@
             <div class="p-1" id="isPointed"></div>
             <div class="p-2"><i class="fas fa-male" [style]="defaultStyle"></i>
                 </div>
-            <div class="p-2"><p [style]="defaultStyle">About</p></div>
+            <div class="p-2"><a [routerLink]="['/about']" [style]="defaultStyle">About</a ></div>
           </div>
     </div>
     <div class="row" id="service">
@@ -26,7 +26,7 @@
             <div class="p-1" id="isPointed"></div>
             <div class="p-2"><i class=" fas fa-hands-helping" [style]="defaultStyle"></i>
                 </div>
-            <div class="p-2"><p [style]="defaultStyle">Services</p></div>
+            <div class="p-2"><a [routerLink]="['/service']" [style]="defaultStyle">Services</a ></div>
           </div>
     </div>
     <div class="row" id="experience">
@@ -34,7 +34,7 @@
             <div class="p-1" id="isPointed"></div>
             <div class="p-2"><i class=" fas fa-hammer" [style]="defaultStyle"></i>
                 </div>
-            <div class="p-2"><p [style]="defaultStyle">Experience</p></div>
+            <div class="p-2"><a [routerLink]="['/experience']" [style]="defaultStyle">Experience</a ></div>
           </div>
     </div>
     <div class="row" id="education">
@@ -42,7 +42,7 @@
             <div class="p-1" id="isPointed"></div>
             <div class="p-2"><i class=" fas fa-graduation-cap" [style]="defaultStyle"></i>
                 </div>
-            <div class="p-2"><p [style]="defaultStyle">Education</p></div>
+            <div class="p-2"><a [routerLink]="['/education']" [style]="defaultStyle">Education</a></div>
           </div>
     </div>
     <div class="row" id="mySkill">
@@ -50,7 +50,7 @@
             <div class="p-1" id="isPointed"></div>
             <div class="p-2"><i class=" fab fa-git-alt" [style]="defaultStyle"></i>
                 </div>
-            <div class="p-2"><p [style]="defaultStyle">Skill</p></div>
+            <div class="p-2"><a [routerLink]="['/skill']" [style]="defaultStyle">Skill</a ></div>
           </div>
     </div>
     <div class="row" id="personalProject">
@@ -58,23 +58,16 @@
             <div class="p-1" id="isPointed"></div>
             <div class="p-2"><i class=" fas fa-hammer" [style]="defaultStyle"></i>
                 </div>
-            <div class="p-2"><p [style]="defaultStyle">Project</p></div>
+            <div class="p-2"><a [routerLink]="['/personalProject']" [style]="defaultStyle">Projects</a ></div>
           </div>
     </div>
-    <div class="row" id="language">
-        <div class="d-flex flex-row ">
-            <div class="p-1" id="isPointed"></div>
-            <div class="p-2"><i class=" fab fa-leanpub" [style]="defaultStyle"></i>
-                </div>
-            <div class="p-2"><p [style]="defaultStyle">Languages</p></div>
-          </div>
-    </div>
+    
     <div class="row" id="contact">
         <div class="d-flex flex-row ">
             <div class="p-1" id="isPointed"></div>
             <div class="p-2"><i class=" fas fa-phone" [style]="defaultStyle"></i>
                 </div>
-            <div class="p-2"><p [style]="defaultStyle">Contact</p></div>
+            <div class="p-2"><a [routerLink]="['/contact']" [style]="defaultStyle">Contact</a></div>
           </div>
     </div>
 
