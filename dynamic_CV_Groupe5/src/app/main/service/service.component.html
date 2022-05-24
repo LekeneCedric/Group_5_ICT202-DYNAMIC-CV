@@ -1,5 +1,6 @@
 <div
-      class="p-5 text-center bg-image g-4"
+      id="service"
+      class="p-5 text-center  shadow-15-strong hover-shadow overflow-auto"
       style="
         opacity: 0px;
         height: 500px;
@@ -9,20 +10,24 @@
         background-color: #ffffff;
         border-radius: 25px;
       ">
+        <div class="row">
+            <div class="firstElement">
+                <h4 class="fw-bold mt-0 row">Services</h4>
+                <div class="space mt-3"> </div>
+            </div>
+            <button type="button" class="btn btn-danger d-inline btn-floating">
+              <i class="fas fa-magic"></i>
+            </button>
+        </div>
+        <style> 
+          .space{
+              height:1.1vh;
+              width:55px;
+              border-radius:10px;
+              background-color:#FF5959,
+          }</style>
     
-    <div class="row row-3 float-sm-start">
-      <h2 class="float-sm-start row" style="font-weight:bold">Services</h2>
-      <div class="float-sm-start row progress">
-        <div
-          class="progress-bar progress-bar"
-          role="progressbar"
-          style="width: 100%;background-color: rgb(245, 122, 122);"
-          aria-valuenow="100"
-          aria-valuemin="100"
-          aria-valuemax="100"
-        ></div>
-      </div>
-    </div>
+    
 
     <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
         <div class="col" id="element">

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-my-skill',
@@ -11,5 +11,6 @@ export class MySkillComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+@Input()
+competences:any
 }

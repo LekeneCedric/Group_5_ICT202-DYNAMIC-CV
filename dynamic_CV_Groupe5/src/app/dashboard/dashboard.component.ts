@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,7 +11,8 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
+  @Input()
+  nom:any
   defaultStyle:String=" color:white";
   defaultBackgroundColor:String = "backgroundColor:#4a63e7"
 }

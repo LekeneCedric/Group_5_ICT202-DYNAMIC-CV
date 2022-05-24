@@ -1,0 +1,73 @@
+{
+    "username":"OUSMAN ABDEL",
+    "competence":[
+        {
+            "nom":"HTML",
+            "value":100
+        },
+        {
+            "nom":"CSS",
+            "value":80
+        },
+        {
+        "nom":"Javascript",
+        "value":70
+        },
+        {
+            "nom":"nodeJs",
+            "value":50
+        },
+        {
+            "nom":"Flutter",
+            "value":80
+        }
+    
+    ],
+    "experience":[
+        {
+            "annee":2017,
+            "Description":"I have worked as a cyber cafe as a secretary, doing typing and printing work, designing flyers, designing powerpoints, doinf excell shits, and selling out internet services."
+        },
+        {
+            "annee":2021,
+            "Description":"I have 2 years of experience in building websites with wordpress. And i work with 2 other wordpress developers together to come out with well designed and responsive websites, and we have a count of more than 20 websites developed to date"
+        }
+    ],
+    "education":[
+        {
+            "annee":2012,
+            "Description":"Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam."
+        },
+        {
+            "annee":2015,
+            "Description":"Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam."
+        }
+    ],
+    "certificats":[
+        {
+            "nom":"Microsoft Office",
+            "Description":"training to manipulate microsoft office tools"
+        },
+        {
+            "nom":"Cyber Security",
+            "Description":"training to manipulate cyber security tools"
+        }
+    ],
+    "personalProject":[
+        {
+            "nom":"ChatApplication",
+            "Description":"Chat application for mini community where they can speak freely with each other"
+        },
+        {
+            "nom":"Youtube Clone",
+            "Description":"Youtube Clone  application for mini community where they can speak freely with each other"
+        }
+    ],
+    "language":[
+        {
+            "nom":"French",
+            "niveau":"Fluent"
+        }
+    ]
+    
+}

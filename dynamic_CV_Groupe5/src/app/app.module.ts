@@ -27,9 +27,9 @@ import { MySkillComponent } from './main/my-skill/my-skill.component';
 import { ServiceComponent } from './main/service/service.component';
 import { ExperienceComponent } from './main/experience/experience.component';
 import { EducationComponent } from './main/education/education.component';
-import { LanguageComponent } from './main/language/language.component';
 import { PersonalProjectComponent } from './main/personal-project/personal-project.component';
 import { ContactComponent } from './main/contact/contact.component';
+import { HttpClientJsonpModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,11 +42,11 @@ import { ContactComponent } from './main/contact/contact.component';
     ServiceComponent,
     ExperienceComponent,
     EducationComponent,
-    LanguageComponent,
     PersonalProjectComponent,
     ContactComponent
   ],
   imports: [
+    HttpClientJsonpModule,
     BrowserModule,
     AppRoutingModule,
     MdbAccordionModule,

@@ -1,5 +1,5 @@
 <div
-      class="p-5 text-center bg-image g-4"
+      class="p-5 text-center bg-image shadow-15-strong hover-shadow overflow-auto"
       style="
         opacity: 0px;
         height: 500px;
@@ -9,5 +9,31 @@
         background-color: #ffffff;
         border-radius: 25px;
       ">
-  
+    <div class="row">
+      <div class="firstElement">
+          <h4 class="fw-bold mt-0 row">Personal Project</h4>
+          <div class="space mt-3"> </div>
+      </div>
+      <button type="button" class="btn btn-danger d-inline btn-floating">
+        <i class="fas fa-magic"></i>
+      </button>
+  </div>
+  <style> 
+    .space{
+        height:1.1vh;
+        width:55px;
+        border-radius:10px;
+        background-color:#FF5959,
+    }</style>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+    <div class="card" *ngFor="let competence of personalProject">
+      <img src={{competence.img}} class="card-img-top" alt="Fissure in Sandstone"/>
+      <div class="card-body">
+        <h5 class="card-title">{{competence.nom}}</h5>
+        <p class="card-text">{{competence.Description}}</p>
+        <a href="#!" class="btn btn-danger">Button</a>
+      </div>
+    </div>
+   
+    </div>
 </div>
