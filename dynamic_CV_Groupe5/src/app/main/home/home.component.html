@@ -2,7 +2,7 @@
     class="p-5 text-left bg-image shadow-5-strong hover-shadow overflow-auto"
     style="
       opacity: 0px;
-      height: 500px;
+      height: 600px;
       margin-top: 58px;
       margin-left: 400px;
       margin-right: 60px;
@@ -14,12 +14,12 @@
       <div class="position-absolute top-50 start-50 translate-middle">
 
         <div class="text-white">
-          <h1 class="mb-3">I am Blaise<span style="color: rgb(220, 0, 88);">.</span></h1>
+          <h1 class="mb-3">I am {{nom}}<span style="color: rgb(220, 0, 88);">.</span></h1>
           <h5 class="mb-3">I am web developer, i have experience in developing websites with wordpress.</h5>
           
           <div class="d-grid gap-2 d-md-block">
               <button class="btn btn-danger btn-rounded me-3" type="button">View Portfolio</button>
-              <button type="button" class="btn btn-outline-danger btn-rounded" data-mdb-ripple-color="dark">Danger</button>
+            <a [routerLink]="['/about']" ><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark" >AboutMe</button></a>
             </div>
 
         </div>

@@ -9,9 +9,8 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  @Input()
-  nom :any
-
+  
+  nom : string = localStorage.getItem("nom")!;
   ngOnInit(): void {
   }
   color1Theme1:String = "white";
