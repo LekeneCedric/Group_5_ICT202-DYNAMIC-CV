@@ -2,8 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
-import * as data from "../assets/data.json";
-
+import * as data from '../assets/data.json'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -26,6 +25,7 @@ export class AppComponent implements OnInit{
   certificats : any = JSON.parse(localStorage.getItem("certificat")!);
   languages : any = JSON.parse(localStorage.getItem("language")!);
   ngOnInit(): void {
+    
     // ICI J'initialise a chaque fois qu'on reinitialise la page le local Storage
    
     //   localStorage.setItem("nom","Cedric");
