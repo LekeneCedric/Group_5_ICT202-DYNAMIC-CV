@@ -31,6 +31,7 @@ import { PersonalProjectComponent } from './main/personal-project/personal-proje
 import { ContactComponent } from './main/contact/contact.component';
 import { HttpClientJsonpModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,8 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     HttpClientJsonpModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     MdbAccordionModule,

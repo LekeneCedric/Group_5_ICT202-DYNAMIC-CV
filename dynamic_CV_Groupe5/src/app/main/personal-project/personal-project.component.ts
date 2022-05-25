@@ -9,6 +9,23 @@ export class PersonalProjectComponent implements OnInit {
 
   constructor() { }
 
+  isAdd:boolean = false;
+  img:String =""
+  nom:String ="";
+  description:String="";
+  add():void
+  {
+    this.isAdd = !this.isAdd
+  }
+  addProject() :void{
+    const lastProject = JSON.parse(localStorage.getItem("personalProject")!)
+      lastProject.push({img:`${this.img}`,nom:`${this.nom}`,Description:`${this.description}`})
+      localStorage.setItem("personalProject",JSON.stringify(lastProject))
+      this.add()
+      this.ngOnInit()
+      window.location.reload()
+
+  }
   ngOnInit(): void {
   }
   personalProject : any = JSON.parse(localStorage.getItem("personalProject")!);
