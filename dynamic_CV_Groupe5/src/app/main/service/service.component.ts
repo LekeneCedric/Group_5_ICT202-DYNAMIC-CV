@@ -8,7 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class ServiceComponent implements OnInit {
 
   constructor() { }
-
+  isAdd:boolean = false;
+  add():void
+    {
+      this.isAdd = !this.isAdd
+    }
+    nom:String = "";
+    description:String=""
+    addService() :void{
+      const lastProject = JSON.parse(localStorage.getItem("service")!)
+        lastProject.push({title:`${this.nom}`,Description:`${this.description}`})
+        localStorage.setItem("service",JSON.stringify(lastProject))
+        this.add()
+        this.ngOnInit()
+        window.location.reload()
+  
+    }
   ngOnInit(): void {
   }
 

@@ -25,6 +25,21 @@ export class MySkillComponent implements OnInit {
       window.location.reload()
 
   }
+  removeSkill():void{
+    const lastExperiences = JSON.parse(localStorage.getItem("competence")!)
+    
+    var skill = JSON.parse(localStorage.getItem("competence")!);
+       
+    for (let [i, user] of skill.entries()) {
+      if (user.nom == `${this.nom}`) {
+        skill.splice(i, 1); // Tim is now removed from "users"
+      }
+    }
+    localStorage.setItem("competence",JSON.stringify(skill))
+    this.add()
+    this.ngOnInit()
+    window.location.reload()
+  }
   ngOnInit(): void {
   }  
   competences:any = JSON.parse(localStorage.getItem("competence")!);

@@ -89,21 +89,21 @@ export class AppComponent implements OnInit{
     //     }
     //   ]`);
     
-    //   localStorage.setItem("personalProject",`[
-    //     {   "img":"https://img.freepik.com/vecteurs-libre/maquette-application-chat-mobile-conception-ux-ui-smartphone-isole-fond-blanc-modele-conception-reseau-social_172533-325.jpg?w=1060",
-    //         "nom":"ChatApplication",
-    //         "Description":"Chat application for mini community where they can speak freely with each other"
-    //     },
-    //     {   "img":"https://www.fluttercampus.com/img/uploads/web/2021/03/be83ab3ecd0db773eb2dc1b0a17836a1.webp",
-    //         "nom":"Youtube Clone",
-    //         "Description":"Youtube Clone  application for mini community where they can speak freely with each other"
-    //     },
-    //     {
-    //       "img":"https://www.paho.org/sites/default/files/card/2021-03/vacunacion-covid-americas-650-400.jpg",
-    //       "nom":"Project Sanka",
-    //       "Description":"Project with manages the process of vaccination"
-    //     }
-    //   ]`);
+      // localStorage.setItem("personalProject",`[
+      //   {   "img":"https://img.freepik.com/vecteurs-libre/maquette-application-chat-mobile-conception-ux-ui-smartphone-isole-fond-blanc-modele-conception-reseau-social_172533-325.jpg?w=1060",
+      //       "nom":"ChatApplication",
+      //       "Description":"Chat application for mini community where they can speak freely with each other"
+      //   },
+      //   {   "img":"https://www.fluttercampus.com/img/uploads/web/2021/03/be83ab3ecd0db773eb2dc1b0a17836a1.webp",
+      //       "nom":"Youtube Clone",
+      //       "Description":"Youtube Clone  application for mini community where they can speak freely with each other"
+      //   },
+      //   {
+      //     "img":"https://www.paho.org/sites/default/files/card/2021-03/vacunacion-covid-americas-650-400.jpg",
+      //     "nom":"Project Sanka",
+      //     "Description":"Project with manages the process of vaccination"
+      //   }
+      // ]`);
    
     //   localStorage.setItem("language",`[
     //     {
@@ -124,9 +124,13 @@ export class AppComponent implements OnInit{
       //}
       //array.push({nom:'java',value:40})
       //console.log(array)
-      console.log(JSON.stringify(localStorage.getItem("personalProject")))
-  }
-  
+//        let skill = JSON.parse(localStorage.getItem("competence")!);
+       
+// for (let [i, user] of skill.entries()) {
+//   if (user.nom == "HTML") {
+//     skill.splice(i, 1); // Tim is now removed from "users"
+//   }
+// }
+// console.log(skill)
 
-
-}
+}}

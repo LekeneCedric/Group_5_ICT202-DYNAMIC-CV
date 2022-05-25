@@ -25,6 +25,10 @@ export class EducationComponent implements OnInit {
       window.location.reload()
 
   }
+  removeEducation():void{
+    const lastEducation = JSON.parse(localStorage.getItem("education")!)
+    lastEducation.push({annee:`${this.annee}`,Description:`${this.description}`})
+  }
   ngOnInit(): void {
   }
 }

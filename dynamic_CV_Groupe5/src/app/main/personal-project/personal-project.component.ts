@@ -26,6 +26,22 @@ export class PersonalProjectComponent implements OnInit {
       window.location.reload()
 
   }
+  removeProject():any{
+    const lastProject = JSON.parse(localStorage.getItem("personalProject")!)
+      lastProject.push({img:`${this.img}`,nom:`${this.nom}`,Description:`${this.description}`})
+      localStorage.setItem("personalProject",JSON.stringify(lastProject));
+      var projets = JSON.parse(localStorage.getItem("personalProject")!);
+       
+    for (let [i, user] of projets.entries()) {
+      if (user.nom == `${this.nom}`) {
+        projets.splice(i, 1); // Tim is now removed from "users"
+      }
+    }
+    localStorage.setItem("personalProject",JSON.stringify(projets));
+      this.add()
+      this.ngOnInit()
+      window.location.reload()
+  }
   ngOnInit(): void {
   }
   personalProject : any = JSON.parse(localStorage.getItem("personalProject")!);
