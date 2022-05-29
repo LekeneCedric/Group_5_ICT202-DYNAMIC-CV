@@ -12,6 +12,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     
   }
+  color:String = "";
   nom : String = localStorage.getItem("nom")!;
   addPicture:boolean=false;
   addName:boolean = false;
